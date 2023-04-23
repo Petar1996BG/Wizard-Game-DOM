@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Softuni Wizard</title>
+</head>
+<body>
+    <article id="main-game" class="game">
+        <article class="start-screen">Press to Start</article>
+        <article class="choose-level-screen">Choose Level</article>
+        <article class="choose-level-container hidden">
+            <article class="img-container">
+                <img id="desert-image" class="game-image" onclick="imgClick()" src="./images/desert.jpg" alt="Alternate Text" />
+            </article>
+            <article class="img-container">
+                <img class="game-image" onclick="imgClick()" src="./images/forest.jpg" alt="Alternate Text" />
+            </article>
+            <article class="img-container">
+                <img class="game-image" onclick="imgClick()" src="./images/artica.jpg" alt="Alternate Text" />
+            </article>
+            <article class="img-container">
+                <img class="game-image" onclick="imgClick()" src="./images/system.jpg" alt="Alternate Text" />
+            </article>
+            <article class="button-container">
+                <button onclick="backFunc()">Go Back</button>
+            </article>
+        </article>
+        <article class="instructions-screen">Instructions</article>
+        <article class="instructions-container hidden">
+            <p>W ===> Move Up</p>
+            <p>D ===> Move Right</p>
+            <p>S ===> Move Down</p>
+            <p>A ===> Move Left</p>
+            <p>SPACE ===> Fire</p>
+            <button id="go-back-btn" onclick="backFunc()">Go Back</button>
+        </article>
+        <article class="game-screen hidden">
+            <article class="score">0 pts.</article>
+        </article>
+    </article>
+
+    <script src="./js/gameState.js"></script>
+    <script src="./js/gameObjects.js"></script>
+    <script src="./js/gameEngine.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

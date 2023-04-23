@@ -1,0 +1,158 @@
+body {
+    font-family: 'Consolas';
+    margin: 0;
+    overflow: hidden;
+}
+
+.game {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/desert.jpg");
+    background-size: 100% 100%
+}
+
+.start-screen {
+    text-align: center;
+    padding: 30px;
+    font-size: 48px;
+    width: 500px;
+    background-color: lightgreen;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -30%);
+    opacity: 0.7;
+}
+
+.choose-level-screen {
+    text-align: center;
+    padding: 30px;
+    font-size: 48px;
+    width: 500px;
+    background-color: lightgreen;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+}
+
+.instructions-screen {
+    text-align: center;
+    padding: 30px;
+    font-size: 48px;
+    width: 500px;
+    background-color: lightgreen;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -70%);
+    opacity: 0.7;
+}
+
+.instructions-container {
+    text-align: left;
+    padding: 30px;
+    font-size: 48px;
+    width: 500px;
+    background-color: lightgreen;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+}
+
+.button-container {
+    position: absolute;
+    top: 140%;
+    left: 45.8%;
+}
+
+    .button-container button {
+        border-style: none;
+        font-size: 32px;
+    }
+
+        .button-container button:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+#go-back-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 32px;
+    border-style: none;
+}
+
+    .start-screen:hover, .instructions-screen:hover, #go-back-btn:hover, .choose-level-screen:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        opacity: 1;
+    }
+
+.img-container {
+    width: 300px;
+    height: 300px;
+}
+
+    .img-container img {
+        width: 100%;
+        height: 100%;
+        border: 10px solid gray;
+    }
+
+        .img-container img:hover {
+            border: 10px solid yellow !important;
+            cursor: pointer;
+        }
+
+.choose-level-container {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    grid-gap: 80px;
+}
+
+.game-screen {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/desert.jpg");
+    background-size: 100% 100%;
+}
+
+.wizard {
+    position: absolute;
+    background-image: url("../images/wizard.png");
+    background-size: cover;
+}
+
+.bug {
+    position: absolute;
+    background-image: url("../images/bug.png");
+    background-size: cover;
+}
+
+.fireball {
+    position: absolute;
+    background-image: url("../images/fire-ball.png");
+    background-size: cover;
+}
+
+.hidden {
+    display: none;
+}
+
+.score {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    color: white;
+    font-size: 25px;
+}
